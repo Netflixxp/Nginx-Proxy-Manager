@@ -1,4 +1,7 @@
 # Nginx Proxy Manager 一键安装脚本
+[![作者](https://img.shields.io/badge/作者-jcnf--那坨-blue.svg)](https://ybfl.net)
+[![TG频道](https://img.shields.io/badge/TG频道-@mffjc-宗绿色.svg)](https://t.me/mffjc)
+[![TG交流群](https://img.shields.io/badge/TG交流群-点击加入-yellow.svg)](https://t.me/+TDz0jE2WcAvfgmLi)
 
 这是一个用于在 Debian 11+ 或 Ubuntu 20.04+ 系统上一键安装 [Nginx Proxy Manager](https://nginxproxymanager.com/) (NPM) 的 Shell 脚本。它可以帮助你快速部署 NPM，并自动处理依赖安装、Docker环境配置等步骤。
 
@@ -29,8 +32,9 @@
 **方法一: 
 
 ```bash
-wget -O ng.sh https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh && chmod +x ng.sh && ./ng.sh```
-
-**方法二: 
+wget -O ng.sh https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh && chmod +x ng.sh && ./ng.sh
+```
+**方法二
 ```bash
-bash <(curl -sSL https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh)```
+bash <(curl -sSL https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh)
+```
