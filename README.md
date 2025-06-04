@@ -26,11 +26,11 @@
 
 选择以下任一命令在你的服务器上执行即可。脚本会自动下载并运行。
 
-**方法一: 使用 `wget`**
+**方法一: 
 
 ```bash
-wget -O ng.sh https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh && chmod +x ng.sh && ./ng.sh
+wget -O ng.sh https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh && chmod +x ng.sh && ./ng.sh```
 
-**方法二: 使用 `wget`**
+**方法二: 
 ```bash
-bash <(curl -sSL https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh)```
