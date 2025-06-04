@@ -17,67 +17,20 @@
 
 *   一台VPS（虚拟专用服务器）
 *   推荐系统：Debian 11 (Bullseye) 或更高版本，Ubuntu 20.04 (Focal Fossa) 或更高版本。
-*   具有 `root` 权限或可以执行 `sudo` 命令的用户。
+*   具有 `root` 权限或可以执行 `sudo` 命令的用户 (脚本内部会尝试使用`sudo`提权)。
 *   稳定的网络连接。
 
 ## 使用方法
 
-1.  **下载脚本**:
-    你可以使用 `wget` 或 `curl` 下载脚本。
+### 快速开始 (一键安装)
 
-    ```bash
-    # 使用 wget
-    wget -O install_npm.sh https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh
+选择以下任一命令在你的服务器上执行即可。脚本会自动下载并运行。
 
-    # 或者使用 curl
-    # curl -o install_npm.sh https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh
-    ```
-
-2.  **赋予执行权限**:
-
-    ```bash
-    chmod +x install_npm.sh
-    ```
-
-3.  **运行脚本**:
-    推荐使用 `root` 用户执行，或者使用 `sudo`。
-
-    ```bash
-    sudo ./install_npm.sh
-    ```
-    脚本会引导你完成后续步骤，包括选择 NPM 版本。
-
-## 安装后
-
-脚本成功执行后，Nginx Proxy Manager 将会启动。
-
-*   **访问地址**: `http://<你的VPS IP地址>:81`
-*   **默认登录邮箱**: `admin@example.com`
-*   **默认登录密码**: `changeme`
-
-**重要提示**: 首次登录后，请务必立即修改默认的管理员邮箱和密码！
-
-### 防火墙设置
-
-如果你的 VPS 启用了防火墙 (例如 `ufw`)，你需要确保以下端口是开放的：
-
-*   `80/tcp` (HTTP)
-*   `81/tcp` (NPM 管理面板)
-*   `443/tcp` (HTTPS)
-
-例如，使用 `ufw`:
+**方法一: 使用 `wget`**
 
 ```bash
-sudo ufw allow 80/tcp
-sudo ufw allow 81/tcp
-sudo ufw allow 443/tcp
-sudo ufw reload
+wget -O ng.sh https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh && chmod +x ng.sh && ./ng.sh
 
-版本选择
-脚本会提示你选择安装以下任一版本：
-中文版:
-Docker 镜像: chishin/nginx-proxy-manager-zh:release
-特点: 界面汉化，更适合中文用户。
-英文原版:
-Docker 镜像: jc21/nginx-proxy-manager:latest
-特点: 官方最新版本。
+**方法二: 使用 `wget`**
+```bash
+bash <(curl -sSL https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh)
