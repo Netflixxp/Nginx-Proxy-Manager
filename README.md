@@ -28,13 +28,10 @@
 ### 快速开始 (一键安装)
 
 选择以下任一命令在你的服务器上执行即可。脚本会自动下载并运行。
-
-**方法一: 
-
 ```bash
 wget -O ng.sh https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh && chmod +x ng.sh && ./ng.sh
 ```
-**方法二
+或者
 ```bash
 bash <(curl -sSL https://raw.githubusercontent.com/Netflixxp/Nginx-Proxy-Manager/main/ng.sh)
 ```
