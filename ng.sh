@@ -268,7 +268,7 @@ EOF
     echo_info "默认登录凭据:"
     echo -e "${GREEN}Email:    admin@example.com${NC}"
     echo -e "${GREEN}Password: changeme${NC}"
-    echo_warn "首次登录后，请务必修改默认的邮箱和密码！"
+    echo_warn "首次登录后，请务必修改默认的邮箱和密码！如果无法打开，请检查vps防护墙81端口是否打开！"
     echo_info "============================================================"
 
     if ! $ROOT_USER && ! $CURRENT_USER_IN_DOCKER_GROUP; then
